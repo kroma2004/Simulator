@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Animals.cs" />
     <Compile Include="Creature.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="DirectionParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

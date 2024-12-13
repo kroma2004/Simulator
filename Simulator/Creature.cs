@@ -81,3 +81,23 @@ public class Creature
             Level++;
     }
 }
+
+public void Go(Direction direction)
+    {
+        string directionName = direction.ToString().ToLower(); // Nazwa kierunku ma być z małej litery
+        Console.WriteLine($"{Name} goes {directionName}.");
+    }
+
+    public void Go(Direction[] directions)
+    {
+        foreach (var direction in directions)
+        {
+            Go(direction); // Wywołanie pierwszej metody Go
+        }
+    }
+
+    public void Go(string directions)
+    {
+        Direction[] parsedDirections = DirectionParser.Parse(directions);
+        Go(parsedDirections); // Wywołanie metody Go z tablicą kierunków
+    }
