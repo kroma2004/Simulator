@@ -8,7 +8,7 @@ public static class DirectionParser
     {
         List<Direction> directions = new();
 
-        foreach (char c in input.ToUpper()) // Zamiana na wielkie litery
+        foreach (char c in input.ToUpper())
         {
             switch (c)
             {
@@ -27,6 +27,6 @@ public static class DirectionParser
             }
         }
 
-        return directions.ToArray(); // Zamiana na tablicę
+        return directions.ToArray();
     }
 }
